@@ -3,6 +3,7 @@
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
 import { Magnetic } from "@/components/ui/Magnetic";
+import Link from "next/link";
 
 export default function Navbar() {
     const { scrollY } = useScroll();
@@ -44,21 +45,21 @@ export default function Navbar() {
 
                 {/* Center Nav */}
                 <nav className="hidden md:flex items-center gap-8 text-[13px] font-medium tracking-wide text-white/70">
-                    <a href="#overview" className="hover:text-white transition-colors">Overview</a>
-                    <a href="#services" className="hover:text-white transition-colors">Services</a>
-                    <a href="#organization" className="hover:text-white transition-colors">Organization</a>
-                    <a href="#contact" className="hover:text-white transition-colors">Contact</a>
+                    <Link href="/#overview" className="hover:text-white transition-colors">Overview</Link>
+                    <Link href="/#services" className="hover:text-white transition-colors">Services</Link>
+                    <Link href="/projects" className="text-white font-semibold transition-colors">Projects</Link>
+                    <Link href="/#contact" className="hover:text-white transition-colors">Contact</Link>
                 </nav>
 
                 {/* Right CTA */}
                 <div className="flex-shrink-0">
                     <Magnetic>
-                        <a
-                            href="#contact"
+                        <Link
+                            href="/#contact"
                             className="text-[13px] font-medium bg-[#E10600] text-white px-5 py-2.5 rounded-full hover:bg-[#aa0400] transition-colors inline-block"
                         >
                             Get in touch
-                        </a>
+                        </Link>
                     </Magnetic>
                 </div>
             </div>

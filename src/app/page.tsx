@@ -3,7 +3,7 @@ import CanvasSequence from "@/components/scroll/CanvasSequence";
 import { HeroSection } from "@/components/sections/HeroSection";
 import { VisionMission } from "@/components/sections/VisionMission";
 import { Services } from "@/components/sections/Services";
-import { Organization } from "@/components/sections/Organization";
+
 import { Footer } from "@/components/sections/Footer";
 import { FloatingWhatsApp } from "@/components/ui/FloatingWhatsApp";
 
@@ -17,7 +17,7 @@ export default function Home() {
         <HeroSection />
         <VisionMission />
         <Services />
-        <Organization />
+
         <Footer />
       </div>
       <FloatingWhatsApp />
