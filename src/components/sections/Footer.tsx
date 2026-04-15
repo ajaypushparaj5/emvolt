@@ -8,7 +8,7 @@ export const Footer = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
         <footer
             ref={ref}
             id="contact"
-            className="relative min-h-[70vh] flex flex-col justify-end w-full bg-transparent py-24 border-t border-white/5"
+            className="relative min-h-[70vh] flex flex-col justify-end w-full bg-black/60 backdrop-blur-xl py-24 border-t border-white/5"
         >
             <div className="max-w-7xl mx-auto px-6 w-full">
                 <motion.div
