@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   description: "Premium MEP engineering solutions based in UAE.",
 };
 
+import { CustomCursor } from "@/components/ui/CustomCursor";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -27,7 +29,11 @@ export default function RootLayout({
       lang="en"
       className={`${inter.variable} ${spaceGrotesk.variable} h-full antialiased text-white bg-transparent`}
     >
-      <body className="min-h-full flex flex-col pt-0 m-0 overflow-x-hidden bg-transparent">{children}</body>
+      <body className="min-h-full flex flex-col pt-0 m-0 overflow-x-hidden bg-transparent">
+        <div className="noise-overlay" />
+        <CustomCursor />
+        {children}
+      </body>
     </html>
   );
 }

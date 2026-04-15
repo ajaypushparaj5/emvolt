@@ -2,6 +2,7 @@
 
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
+import { Magnetic } from "@/components/ui/Magnetic";
 
 export default function Navbar() {
     const { scrollY } = useScroll();
@@ -51,12 +52,14 @@ export default function Navbar() {
 
                 {/* Right CTA */}
                 <div className="flex-shrink-0">
-                    <a
-                        href="#contact"
-                        className="text-[13px] font-medium bg-[#E10600] text-white px-5 py-2.5 rounded-full hover:bg-[#aa0400] transition-colors"
-                    >
-                        Get in touch
-                    </a>
+                    <Magnetic>
+                        <a
+                            href="#contact"
+                            className="text-[13px] font-medium bg-[#E10600] text-white px-5 py-2.5 rounded-full hover:bg-[#aa0400] transition-colors inline-block"
+                        >
+                            Get in touch
+                        </a>
+                    </Magnetic>
                 </div>
             </div>
         </motion.header>

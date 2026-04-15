@@ -28,7 +28,7 @@ export const Footer = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
 
                 <div className="mt-24 pt-12 border-t border-white/10 grid grid-cols-1 lg:grid-cols-3 gap-12 font-medium">
                     <div className="space-y-4">
-                        <h4 className="text-white text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Dubai / Ajman Office</h4>
+                        <h4 className="text-[#E10600] text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Dubai / Ajman Office</h4>
                         <p className="text-white/80 text-sm leading-relaxed drop-shadow-sm max-w-sm">
                             AL - MURJAN BUILDING GROUND FLOOR OFFICE NO.1, <br />
                             OPP - ADCB BANK AL RASHIDIA 3, AJMAN UAE
@@ -36,7 +36,7 @@ export const Footer = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-white text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Umm Al Quwain Office</h4>
+                        <h4 className="text-[#E10600] text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Umm Al Quwain Office</h4>
                         <p className="text-white/80 text-sm leading-relaxed drop-shadow-sm max-w-sm">
                             AL SHAMOOKH BUSINESS COMPLEX 2ND FLOOR, <br />
                             201 AL ITTIHAD ROAD, AL MUQTA 2 UMM AL QUWAIN, UAE
@@ -44,7 +44,7 @@ export const Footer = forwardRef<HTMLDivElement, {}>(({ }, ref) => {
                     </div>
 
                     <div className="space-y-4">
-                        <h4 className="text-white text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Contact Us</h4>
+                        <h4 className="text-[#E10600] text-sm uppercase tracking-wider font-bold mb-6 drop-shadow-md">Contact Us</h4>
                         <p className="text-white/80 text-sm leading-relaxed drop-shadow-sm">
                             <a href="mailto:info@emvoltude.com" className="hover:text-white hover:underline transition-colors block mb-2">info@emvoltude.com</a>
                             <a href="tel:+971528727036" className="hover:text-white hover:underline transition-colors block">+971 52 872 7036</a>
